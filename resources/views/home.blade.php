@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('title', 'Home - SnackHouse')
@@ -10,9 +9,27 @@
 
     <div class="row align-items-center g-4 py-3">
         <div class="col-lg-7">
-            <span class="badge bg-warning text-dark mb-3">
-                WELCOME TO SNACKHOUSE
-            </span>
+<div class="mb-4">
+    <span class="badge bg-warning text-dark px-4 py-3 fs-5">
+        WELCOME TO SNACKHOUSE
+    </span>
+</div>
+
+{{-- Identitas Pembuat --}}
+<div class="mb-3">
+    <div class="fw-bold text-warning">
+        FITALIS KADEI DUHA
+    </div>
+    <small class="text-white-50 d-block">
+        NIM: 251011700989
+    </small>
+    <small class="text-white-50 d-block">
+        Kelas: 03SIFE001
+    </small>
+    <small class="text-white-50 d-block">
+        Prodi: Sistem Informasi
+    </small>
+</div>
 
             <h1 class="display-5 fw-bold">
                 Camilan Renyah,<br>
@@ -32,8 +49,8 @@
 
         <div class="col-lg-5 text-center">
             <img
-                src="{{ asset('assets/images/keripik-pisang.jpg') }}"
-                alt="Keripik Pisang"
+                src="{{ asset('assets/images/aneka-snack.jpg') }}"
+                alt="Aneka Snack"
                 class="img-fluid rounded-4 shadow"
                 style="max-height: 300px; object-fit: cover;"
             >
